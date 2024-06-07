@@ -1,0 +1,62 @@
+:root {
+    --action-color: #999999;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.action-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--action-color);
+    color: #f2f2f2;
+    border-radius: 50%;
+    cursor: pointer; 
+    overflow: hidden;
+
+    box-shadow: 0px 0px 5px var(--action-color);
+}
+
+.action-list {
+    color: initial;
+    font-size: initial;
+    text-align: initial;
+    line-height: initial;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.action-list-item {
+    list-style-type: none;
+    padding: 8px;
+    white-space: nowrap;
+    background-color: var(--action-color);
+    color:#f2f2f2;
+    
+    /* &:hover {
+        background-color: var(--action-color);
+        cursor: pointer;
+    } */
+    
+    i, span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    i {
+        margin-right: 5px;
+    }
+}

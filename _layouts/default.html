@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<!-- ! Don't use autoformat in this page -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+
+  {% include head-custom.html %}
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      
+      {% if site.logo %}
+      <img src="{{site.logo | relative_url}}" alt="Logo" width="200" class="round_img"/>
+      {% endif %}
+      <br>
+      <h1 style="margin: 0; text-align: center;">{{ site.title }}</a></h1>
+      <p style="text-align: center;">{{ site.description }}</p>
+
+      {% include header-custom.html %}
+    </header>
+
+    <section>
+
+      {{ content }}
+
+    </section>
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </div>
+
+  <div class="action-button z-depth-1">
+    +
+    <ul class="action-list">
+        <li class="action-list-item">
+            <div class="date"></div>
+        </li>
+    </ul>
+  </div>
+
+  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  <!-- ! Last Update Script -->
+  <script src="assets/js/last_updated_date.js"></script>
+  <!-- ! Action Button Script -->
+  <script src="assets/js/action_button.js"></script>
+  <!-- ! Canvas Script -->
+  <script type="text/javascript" color="0,0,0" opacity='0.7' zIndex="-2" count="80" src="../assets/js/canvas_nest.js"></script>
+  <!-- ! Dark Mode Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.58/darkreader.min.js"></script>
+  <script src="assets/js/dark_mode.js"></script>
+</body>
+
+</html>

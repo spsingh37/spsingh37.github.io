@@ -1,0 +1,72 @@
+<!-- Navigation Buttons -->
+<table class="jump_link">
+	<tbody>
+		<tr>
+			<td>
+				<a href="#pro" class="jump_link">
+					<button class="button">Highlight Projects</button>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#pub" class="jump_link">
+					<button class="button">Publications</button>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#edu" class="jump_link">
+					<button class="button">Education</button>
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- Media Links with Logo -->
+<div class="icon-links">
+<!-- ! CV -->
+    <div class="sub-link">
+        <a href="{{ site.url_cv | default: site.url}}" target="_blank">
+            <i class="fa-solid fa-file-pdf fa-2x fa-fw"></i>
+        </a>
+    </div>
+<!-- ! Github -->
+    <div class="sub-link">
+        <a href="{{ site.url_github }}" target="_blank">
+            <i class="fa-brands fa-square-github fa-2x fa-fw"></i>
+        </a>
+    </div>
+<!-- ! LinkedIn -->
+    <div class="sub-link">
+        <a href="{{ site.url_linkedin }}" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2x fa-fw"></i>
+        </a>
+    </div>
+<!-- ! Steam -->
+    <!-- <div class="sub-link">
+        <a href="{{ site.url_steam }}" target="_blank">
+            <i class="fa-brands fa-square-steam fa-2x fa-fw"></i>
+        </a>
+    </div> -->
+<!-- ! Google Scholar -->
+    <div class="sub-link">
+        <a href="{{ site.url_scholar }}" target="_blank">
+            <i class="fa-brands fa-google-scholar fa-2x fa-fw"></i>
+        </a>
+    </div>
+</div>
+
+<!-- ! Email -->
+<div class="icon-links">
+    <div class="sub-link">
+        <a href="mailto:{{ site.url_email }}" target="_blank">
+            <i class="fa-solid fa-square-envelope fa-2x fa-fw"></i>
+        </a>
+    </div>
+    <div class="sub-link">
+        {{ site.url_email }}
+    </div>
+</div>
