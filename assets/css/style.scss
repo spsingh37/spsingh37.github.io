@@ -8,12 +8,17 @@
 // @import "jump_link.css";
 
 body {
-  background: #add8e6;
+  background: #f0f4f8;
   padding:50px;
   font-size:16px;
   font-family:'Times New Roman', Times, serif;
   color:#727272;
   font-weight:400;
+}
+
+/* Paragraph styling */
+p {
+  color: #d3d3d3; /* Light gray color for paragraph text */
 }
 
 html, body{
@@ -167,7 +172,7 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+  color:#1c1c1e;
   margin:0 0 20px;
 }
 

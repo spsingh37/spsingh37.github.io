@@ -1,4 +1,3 @@
-// particles.js
 document.addEventListener('DOMContentLoaded', function () {
   let canvas = document.createElement('canvas');
   document.body.appendChild(canvas);
@@ -12,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let context = canvas.getContext('2d');
   let particles = [];
-  let particleCount = 0;
+  let particleCount = 100; // Increase the particle count for better coverage
 
   class Particle {
       constructor() {
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
           this.vx = Math.random() * 2 - 1;
           this.vy = Math.random() * 2 - 1;
           this.radius = Math.random() * 3 + 2;
-          this.color = `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.5})`;
+          this.color = `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.5})`; // Subtle white particles
       }
 
       update() {
@@ -48,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function resizeCanvas() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      createParticles(); // Recreate particles on resize to fill the canvas properly
   }
 
   function createParticles() {
