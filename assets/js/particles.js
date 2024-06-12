@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let context = canvas.getContext('2d');
   let particles = [];
-  let particleCount = 100;
+  let particleCount = 0;
 
   class Particle {
       constructor() {
