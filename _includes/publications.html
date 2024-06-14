@@ -13,15 +13,26 @@
     <tbody>
         <tr><td>
             <div class="project_cell">
-                <img src="assets/img/placeholder.jpg" width="250" class="zoom"
-                    onmouseover="this.src='assets/img/placeholder.jpg'" 
-                    onmouseout="this.src='assets/img/placeholder.jpg'">
+                <video width="250" class="zoom" id="projectVideo" poster="assets/img/UAV_view.png" muted>
+                    <source src="assets/videos/eval_austria.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <script>
+                    const videoElement = document.getElementById('projectVideo');
+                    videoElement.onmouseover = function() {
+                        videoElement.play();
+                    };
+                    videoElement.onmouseout = function() {
+                        videoElement.pause();
+                        videoElement.currentTime = 0;
+                    };
+                </script>
             </div>
             <div class="project_cell">
-                [<a href="assets/videos/placeholder.jpg" target="_blank">
+                [<a href="assets/videos/eval_austria.mp4" target="_blank">
                     Video
                 </a>]
-                [<a href="https://arxiv.org/abs/2305.04750" target="_blank">
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9292630" target="_blank">
                     PDF
                 </a>]
                 [<a href="assets/img/placeholder.jpg" target="_blank">
@@ -36,6 +47,7 @@
         </td></tr>
     </tbody>
 </table>
+
 <!-- !Height Control for Wheeled-Bipedal Robots -->
 <p style="font-size:18px;margin-bottom: 0px;">
     <font color="black">
