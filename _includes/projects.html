@@ -31,7 +31,7 @@
             [<span style="color: grey; text-decoration: none;">Code (Coming Soon)</span>]
             [<a href="https://drive.google.com/file/d/1stXqYokZfWw-clVRVku7g8p80hlcKNYL/view?usp=sharing" target="_blank">Video</a>]
             <br>
-            To create a robust multi-terrain control policy for autonomous racing, LiDAR and RGB camera inputs were used for online RL. A lightweight UNet model enhanced the visual sim-to-real transfer, achieving a 0.99 Dice score by segmenting floor, opponent rover, walls, and background. ROS nodelet manager and optimized ROS-Docker communication boosted update rates from 10 Hz to 30 Hz, allowing the rover to run up to 2.5 m/s. Offline TD-MPC based RL then achieved effective results with 5K-10K transitions in under 15 episodes, versus over 300K episodes for online training.
+            To develop a robust multi-terrain control policy for autonomous racing, LiDAR and RGB camera inputs were used for online RL. A lightweight UNet model improved visual sim-to-real transfer, achieving a 0.99 Dice score by segmenting floor, opponent rover, walls, and background. ROS nodelet manager and optimized ROS-Docker communication boosted update rates from 10 Hz to 30 Hz, allowing the rover to run up to 2.5 m/s. Offline TD-MPC RL then yielded effective results with 5K-10K transitions in under 15 episodes, compared to over 300K episodes needed for online training.
           </p>
         </div>
       </td>
@@ -67,7 +67,7 @@
             [<a href="https://github.com/biorobotics/Wombat_robosuite" target="_blank">Code</a>]
             [<a href="https://docs.google.com/presentation/d/1uCb-5oLUr9LShpgxhDzhjrvFSEvU9o_i/edit?usp=sharing&ouid=105419178815487827350&rtpof=true&sd=true" target="_blank">Slides</a>]
             <br>
-            During a project collaboration with clients from Apple, I developed an object-agnostic gripping strategy to enhance e-waste manipulation speed and accuracy in a factory setup. Leading the simulation team, I integrated a novel 6-DoF parallel arm with a software framework, validating forward kinematics and locating singularities. I also implemented a DDPG + HER-based Deep RL algorithm, achieving a 95.55% success rate for pick-and-place operations at conveyor speeds up to 0.5 m/s.
+            Collaborating with clients from Apple, developed an object-agnostic gripping strategy for E-waste manipulation at high speeds and accuracy. Co-led the simulation team to integrate a 6-DoF parallel manipulator with MuJoCo, using a waypoint-following PD controller, achieving joint value errors under 8 mm (lin.) and 0.1 radians (rot.). Created a numerical optimization-based forward kinematics approach with maximum errors of 5 mm (pos.) and 0.75 radians (orient.). Built a pseudo-Jacobian matrix for singularity avoidance and implemented a DDPG + HER-based Deep RL algorithm in MuJoCo-powered Robosuite, reaching a 95.55% success rate up to 0.5 m/s conveyor speeds.
           </p>
         </div>
       </td>
