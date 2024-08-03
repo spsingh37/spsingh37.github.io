@@ -31,7 +31,7 @@
             [<span style="color: grey; text-decoration: none;">Code (Coming Soon)</span>]
             [<a href="https://drive.google.com/file/d/1stXqYokZfWw-clVRVku7g8p80hlcKNYL/view?usp=sharing" target="_blank">Video</a>]
             <br>
-            Developed a lightweight UNet model for image segmentation with a Dice metric of 0.99 and streamlining data annotation using SAM. Enhanced sensor fusion by establishing ROS communication at 30 Hz for lidar and RGB cameras, and integrated the Dreamer algorithm with an Offline RL framework to achieve efficient online fine-tuning of the world model directly in the real world with a step ratio of less than 40%.
+            To develop a robust multi-terrain control policy for autonomous racing, LiDAR and RGB camera inputs were utilized for online reinforcement learning. To transfer the online policy from simulation to real-world scenarios, accurate visual segmentation was crucial. A lightweight UNet model was created, achieving a 0.99 Dice score by segmenting classes such as floor, opponent rover, walls, and background. Next, to enable real-time multimodal sensor fusion for the rover, ROS nodelet manager was used, and ROS-Docker communication was optimized, boosting control update rates from 10 Hz to 30 Hz and allowing the rover to efficiently run up to 2.5 m/s. Given the challenges of sim-to-real transfer and the lengthy simulation training time, offline RL was then employed, achieving effective results with a mere 5K-10K offline buffer and converging under 15 episodes, compared to over 300K episodes of online training required for reinforcement learning.
           </p>
         </div>
       </td>
