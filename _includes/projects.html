@@ -86,7 +86,7 @@
             [<a href="https://github.com/SuryaPratapSingh37/Robot-Navigation-SLAM" target="_blank">Code</a>]
             [<a href="https://drive.google.com/file/d/1_I9DzmosTZh322cdZhQ5kC2oYU9Sklzp/view?usp=drive_link" target="_blank">PDF</a>]
             <br>
-            The project aims to develop a comprehensive robotic system capable of autonomous navigation. This includes designing a feedback controller to regulate motor speed and a velocity-based movement controller, implementing 2D mapping using Lidar for simultaneous localization and mapping (SLAM), and constructing a path planner for effective navigation within the mapped environment.
+            To develop a comprehensive robotic system for autonomous navigation in a warehouse scenario, a multi-hierarchical motion controller was implemented, achieving 2.5 cm RMS trajectory error and velocity errors of 0.025 m/s (linear) and 0.045 rad/s (angular). SLAM was deployed with 2D occupancy grid mapping and Monte Carlo localization, resulting in a 6.63 cm RMS localization error relative to gyrodometry. An A* path planner with collision avoidance and frontier exploration ensured 100% success in optimal path-finding, returning within 5 cm of the home position.
           </p>
         </div>
       </td>
@@ -106,7 +106,7 @@
             [<a href="https://github.com/SuryaPratapSingh37/Robot-Navigation-SLAM" target="_blank">Code</a>]
             [<a href="https://drive.google.com/file/d/19UP8UG3t_4UYOeVGo8vzhoAtccAKI-aY/view?usp=sharing" target="_blank">PDF</a>]
             <br>
-            This is a comprehensive project aimed at developing computer vision algorithms integrated with the kinematics of a 5-DOF manipulator. The project focuses on detecting and manipulating blocks within the reach of the robot arm.
+            To enable human users to control the RX200 arm through a GUI while providing autonomy via vision-guided kinematics, the arm and RGB-D camera were integrated into the ROS2 framework. A PID controller was implemented for precise control, achieving less than 2 cm end-effector positioning error in block swapping. Automatic camera calibration with Apriltags and integration with forward and inverse kinematics ensured 100% success in click-to-grab/drop tasks within a 35 cm radius. Block color (VIBGYOR) and size detection algorithms with OpenCV allowed the arm to sort blocks with 100% accuracy.
           </p>
         </div>
       </td>
@@ -125,7 +125,7 @@
             [<a href="https://github.com/SuryaPratapSingh37/UAV-SaR-Tracking" target="_blank">Code</a>]
             [<a href="https://ieeexplore.ieee.org/abstract/document/9292630" target="_blank">PDF</a>]
             <br>
-            ROS Package to implement reinforcement learning algorithms for autonomous navigation of UAV in a Search-and-Rescue environment. A PID algorithm is employed for position control.
+            To enhance autonomous UAV navigation in search-and-rescue (SaR) missions, the project focused on using reinforcement learning to locate and track victims until the rescue team arrives. An urban scenario was simulated in Gazebo with the AR.Drone, and a position controller was fine-tuned using MATLAB’s System Identification Toolbox, achieving less than 1 cm position error. Q-learning with function approximation reduced training time by 50% and addressed large state spaces. YOLO combined with Optical Flow was also used for real-time target tracking, showcasing effective performance in dynamic SaR environments.
           </p>
         </div>
       </td>
