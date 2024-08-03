@@ -36,24 +36,6 @@
         </div>
       </td>
     </tr>
-    <!-- ! Wombat -->
-    <!-- <tr><td>
-      <div class="project_cell">
-        <img src="assets/img/placeholder.jpg" width="250" class="zoom">
-      </div>
-      <div class="project_cell">
-        <p style="font-size:18px;margin-bottom: 0px;">
-          <font color="black"><b>Electronic-waste Recycling</b></font>
-        </p>
-        <p>
-          [<a href="https://github.com/SuryaPratapSingh37/KinoVision" target="_blank">
-            Code
-          </a>]
-          <br>
-          During a project collaboration with clients from Apple, I developed an object-agnostic gripping strategy to enhance e-waste manipulation speed and accuracy in a factory setup. Leading the simulation team, I integrated a novel 6-DoF parallel arm with a software framework, validating forward kinematics and locating singularities. I also implemented a DDPG + HER-based Deep RL algorithm, achieving a 95.55% success rate for pick-and-place operations at conveyor speeds up to 0.5 m/s.
-        </p>
-      </div>
-    </td></tr> -->
     <tr>
       <td>
         <div class="project_cell">
@@ -111,25 +93,27 @@
         </div>
       </td>
     </tr>
-    <!-- ! Autonomous UAV -->
+
+    <!-- ! Self Driving Cars -->
     <tr>
       <td>
         <div class="project_cell">
-          <img src="assets/img/UAV_view.png" width="250" height="200" class="zoom">
+          <img src="assets/img/self_driving_suite_gif.gif" width="250" height="200" class="zoom">
         </div>
         <div class="project_cell">
           <p style="font-size:18px;margin-bottom: 0px;">
-            <font color="black"><b>Autonomous UAV-based Search and Rescue</b></font>
+            <font color="black"><b>SelfDriveSuite: Vehicle Control and Scene Understanding</b></font>
           </p>
           <p>
-            [<a href="https://github.com/SuryaPratapSingh37/UAV-SaR-Tracking" target="_blank">Code</a>]
-            [<a href="https://ieeexplore.ieee.org/abstract/document/9292630" target="_blank">PDF</a>]
+            [<a href="https://github.com/SuryaPratapSingh37/Robot-Navigation-SLAM" target="_blank">Code</a>]
+            [<a href="https://drive.google.com/file/d/19UP8UG3t_4UYOeVGo8vzhoAtccAKI-aY/view?usp=sharing" target="_blank">PDF</a>]
             <br>
-            To enhance autonomous UAV navigation in search-and-rescue (SaR) missions, the project focused on using reinforcement learning to locate and track victims until the rescue team arrives. An urban scenario was simulated in Gazebo with the AR.Drone, and a position controller was fine-tuned using MATLAB’s System Identification Toolbox, achieving less than 1 cm position error. Q-learning with function approximation reduced training time by 50% and addressed large state spaces. YOLO combined with Optical Flow was also used for real-time target tracking, showcasing effective performance in dynamic SaR environments.
+            This project focused on developing algorithms for autonomous driving, including adaptive cruise control, model predictive control (MPC), and robust scene understanding. A QP-based minimum norm controller achieved 100% success in maintaining a safe following distance of at least 1.8 times the vehicle's velocity. Linear and nonlinear MPCs ensured robust path tracking with RMS errors of &lt1m in position, &lt 0.5 rad in orientation, &lt0.5 m/s in velocity, and &lt1 m/s² in acceleration. For scene understanding, a 2D image classification model reached 90% accuracy on challenging blurry images, and a 15-class scene segmentation model, trained in varied weather conditions, achieved an 81.2 mIoU score using UNet.
           </p>
         </div>
       </td>
     </tr>
+
     <!-- ! OriCon3D -->
     <tr>
       <td>
@@ -144,16 +128,17 @@
             [<a href="https://github.com/DhyeyR-007/OriCon3D/tree/main" target="_blank">Code</a>]
             [<a href="https://arxiv.org/pdf/2304.14484" target="_blank">PDF</a>]
             <br>
-            A Robust, light-weight and unique 3D object detection architecture providing results (better than the conventional architectures) in real-time autonomous driving scenarios
+            This project involved developing a robust and lightweight 3D object detection architecture for real-time autonomous driving using the KITTI dataset. Using MultiBin to regress 3D bounding box orientation from 2D bounding boxes with a pre-trained YOLO model, we achieved 3D IoU scores of 76.9 for Cars, 67.76 for Pedestrians, and 66.5 for Cyclists. Integrating lightweight feature extractors like MobileNet-v2 and EfficientNet-v2 reduced inference time by over 80% and improved 3D IoU by 2.4% for Cars, 1.5% for Pedestrians, and 4.5% for Cyclists, delivering superior performance compared to conventional methods.
           </p>
         </div>
       </td>
     </tr>
+
     <!-- ! Twilight-SLAM -->
     <tr>
       <td>
         <div class="project_cell">
-          <img src="assets/img/twilight_slam.png" width="250" height="200" class="zoom">
+          <img src="assets/img/twilight_slam_gif.gif" width="250" height="200" class="zoom">
         </div>
         <div class="project_cell">
           <p style="font-size:18px;margin-bottom: 0px;">
@@ -163,7 +148,28 @@
             [<a href="https://github.com/TwilightSLAM" target="_blank">Code</a>]
             [<a href="https://arxiv.org/pdf/2304.11310" target="_blank">PDF</a>]
             <br>
-            Developed a Deep Learning-based image enhancement architecture to brighten low-light images, significantly improving feature extraction. Additionally, I integrated these enhancement modules with ORB-SLAM3 and SuperPoint-SLAM frameworks, resulting in validated improvements in localization accuracy under low-light conditions.
+            This project enhanced Visual SLAM accuracy by integrating advanced image enhancement modules—Bread, Dual, EnlightenGAN, and Zero-DCE—into ORB-SLAM3 and SuperPoint-SLAM. This approach achieved a 15% mean increase in features extracted across mild-daylight, semi-dark, and dark environments. Localization precision improved with an 18% reduction in RMSE between SLAM-generated and ground-truth poses, with ORB-SLAM3 outperforming SuperPoint-SLAM. Additionally, EnlightenGAN with ORB-SLAM3 reduced maximum absolute error in SLAM-generated poses by 13%, optimizing performance in low-light conditions.
+          </p>
+        </div>
+      </td>
+    </tr>
+
+    <!-- ! Autonomous UAV -->
+    <tr>
+      <td>
+        <div class="project_cell">
+          <img src="assets/img/UAV_gif.gif" width="250" height="200" class="zoom">
+        </div>
+        <div class="project_cell">
+          <p style="font-size:18px;margin-bottom: 0px;">
+            <font color="black"><b>Autonomous UAV-based Search and Rescue</b></font>
+          </p>
+          <p>
+            [<a href="https://github.com/SuryaPratapSingh37/UAV-SaR-Tracking" target="_blank">Code</a>]
+            [<a href="https://youtu.be/EpdRJuqJbFY?t=1551" target="_blank">Video</a>]
+            [<a href="https://ieeexplore.ieee.org/abstract/document/9292630" target="_blank">PDF</a>]
+            <br>
+            To enhance autonomous UAV navigation in search-and-rescue (SaR) missions, the project focused on using reinforcement learning to locate and track victims until the rescue team arrives. An urban scenario was simulated in Gazebo with the AR.Drone, and a position controller was fine-tuned using MATLAB’s System Identification Toolbox, achieving less than 1 cm position error. Q-learning with function approximation reduced training time by 50% and addressed large state spaces. YOLO combined with Optical Flow was also used for real-time target tracking, showcasing effective performance in dynamic SaR environments.
           </p>
         </div>
       </td>
