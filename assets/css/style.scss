@@ -140,9 +140,15 @@ button.button{
 }
 
 // ! wrapper div
+// .wrapper {
+//   width:900px; // *total page size
+//   margin:0 auto;
+//   vertical-align: middle;
+// }
 .wrapper {
-  width:900px; // *total page size
-  margin:0 auto;
+  width: 90%; /* Change this from 900px to a more flexible value */
+  max-width: 1200px; /* Optional: Add a maximum width to avoid overly wide text on large screens */
+  margin: 0 auto;
   vertical-align: middle;
 }
 
@@ -150,17 +156,28 @@ button.button{
   vertical-align: middle;
 }
 
+// header {
+//   width:220px; // *the left part size
+//   float:left;
+//   position:fixed;
+//   -webkit-font-smoothing:subpixel-antialiased;
+// }
 header {
-  width:220px; // *the left part size
-  float:left;
-  position:fixed;
+  width: 20%; /* Change the width to be a percentage for better scaling */
+  float: left;
+  position: fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+// section {
+//   width:630px; // *the right part size
+//   float:right;
+//   padding-bottom:50px;
+// }
 section {
-  width:630px; // *the right part size
-  float:right;
-  padding-bottom:50px;
+  width: 75%; /* Increase the section width to use more horizontal space */
+  float: right;
+  padding-bottom: 50px;
 }
 
 footer {
@@ -291,15 +308,24 @@ hr {
 
 @media print, screen and (max-width: 960px) {
 
+  // div.wrapper {
+  //   width:auto;
+  //   margin:0;
+  // }
   div.wrapper {
-    width:auto;
-    margin:0;
+    width: 95%; /* Ensure the wrapper uses more space on smaller screens */
+    margin: 0;
   }
 
+  // header, section, footer {
+  //   float:none;
+  //   position:static;
+  //   width:auto;
+  // }
   header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
+    float: none;
+    position: static;
+    width: 100%; /* Full width on smaller screens */
   }
 
   header {
