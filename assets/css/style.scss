@@ -156,18 +156,18 @@ button.button{
   vertical-align: middle;
 }
 
-// header {
-//   width:220px; // *the left part size
-//   float:left;
-//   position:fixed;
-//   -webkit-font-smoothing:subpixel-antialiased;
-// }
 header {
-  width: 20%; /* Change the width to be a percentage for better scaling */
-  float: left;
-  position: fixed;
+  width:220px; // *the left part size
+  float:left;
+  position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
+// header {
+//   width: 20%; /* Change the width to be a percentage for better scaling */
+//   float: left;
+//   position: fixed;
+//   -webkit-font-smoothing:subpixel-antialiased;
+// }
 
 // section {
 //   width:630px; // *the right part size
