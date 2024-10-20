@@ -146,7 +146,7 @@ button.button{
 //   vertical-align: middle;
 // }
 .wrapper {
-  width: 90%; /* Change this from 900px to a more flexible value */
+  width: 100%; /* Change this from 900px to a more flexible value */
   max-width: 1200px; /* Optional: Add a maximum width to avoid overly wide text on large screens */
   margin: 0 auto;
   vertical-align: middle;
@@ -335,7 +335,7 @@ hr {
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
-    padding:20px 0;
+    padding:0 0;
     margin:0 0 20px;
   }
 
